@@ -1,0 +1,138 @@
+\chapter{Conceitos}
+\label{cap:conceitos}
+
+%---------------------------------------------------%
+\section{Introdução á Música}
+\label{cap:conceitos:intr:musica}
+
+De acordo com \cite{roads1996computer}, o som pode ser expresso por uma soma de funções periódicas. Sendo assim,
+ele pode ser decomposto em combinações de funções matemáticas primitivas,
+chamadas de seno ou senóides.
+
+O som é medido fisicamente por sua intensidade, frequência e timbre.
+\begin{enumerate}
+	\item{\textbf{Intensidade:} é definido como volume ou amplitude do som;}
+	\item{\textbf{Altura:} é definida como uma senóide mais grave ou  mais aguda, quanto mais grave, menor a frequência e quanto mais aguda, maior a frequência;}
+	\item{\textbf{Timbre:} é como as senóides se diferem;}
+\end{enumerate}
+
+O ouvido humano pode reconhecer frequências de 20Hz à 20KHz, sendo
+capaz de distinguir cerca de 1400 frequências discreta. Sons fora desse intervalo
+não são percebidos porque não possuem energia suficiente para vibrar o tı́mpano,
+ou porque a frequência é tão alta que o tı́mpano não consegue perceber.
+
+Na relação entre duas frequências x e y, sendo a primeira mais baixa que a
+segunda, temos a razão y/x. Quando dois sons tem relação de frequência 2:1
+este recebe o nome de oitava.
+
+Dentro da faixa de audição humana podemos distinguir 10 oitavas: 20Hz a
+40Hz, 40Hz a 80Hz, 80Hz a 160Hz, 160Hz a 320Hz, 320Hz a 640Hz, 640Hz a
+1280Hz, 1280Hz a 2560Hz, 2560Hz a 5120Hz, 5120Hz a 10240, 10240 a 20480Hz.
+
+Uma nota musical é um som cuja a frequência de vibração encontra-se dentro
+do intervalo perceptı́vel ao ouvido humano e a música é a combinação, sob as
+mais diversas formas, de uma sequência de notas em diferentes intervalos.
+
+As notas musicais Dó, Ré, Mi, Fá, Sol, Lá e Si, se repetem em intervalos
+formando oitavas. Uma nota em um intervalo possui o dobro do valor da sua
+frequência no intervalo anterior. Dessa forma, a nota Lá pertencente à quarta
+oitava tem frequência 440Hz, no próximo intervalo dobra a frequência e pertence
+à quinta oitava passando a ter 880Hz \cite{kostka2000tonal}.
+
+Os 12 intervalos que compõem a oitava são chamados de semitons. Portanto
+existem 12 semitons iguais em uma oitava. Dois semitons juntos formam um
+tom. Um semitom separa uma nota de um acidente musical ou de outra nota.
+
+Os acidentes musicais, bemol (b), sustenido ($\sharp$), alteram o valor da nota em um semitom para baixo ou para cima, respectivamente.
+
+Sendo assim os acidentes C$\sharp$, D$\sharp$, F$\sharp$, G$\sharp$ e A, possuem respectivamente, as mesmas frequências dos acidentes Db, Eb, Gb, Ab e Bb quando soam na mesma oitava.
+
+É possível construir uma tabela com as 7 oitavas destinadas ao conceito musical. A \cref{tabela} abaixo mostra o valor da frequência para uma nota ou acidente musical a partir na nota central Lá.
+As sete oitavas estão representadas pelas colunas e os intervalos pelas linhas.
+
+\begin{table}[!htb]
+	\centering	
+	\caption{Frequências sonoras}
+	\label{tabela}
+	\begin{tabular}	{|c|c|c|c|c|c|c|c|c|c|c|c|}
+	\hline
+	\multicolumn{2}{|c|}{Notas}  & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10  \\ \hline
+		01 & C         & 32,70 & 65,41  & 130,82 & 261,63 & 523,25 & 1046,50 & 2093,00 & 4186,00 & 8372,00 & 16744,00 \\ \hline
+		02 & C$\sharp$ & 34,65 & 69,30  & 136,60 & 277,20 & 554,37 & 1108,73 & 2217,46 & 4434,92 & 8869,84 & 17739,68 \\ \hline
+		03 & D         & 35,71 & 73,42  & 146,83 & 293,66 & 567,33 & 1174,66 & 2349,32 & 4698,64 &  9397,28 & 18794,56 \\ \hline
+		04 & D$\sharp$ & 36,70 & 77,78  & 155,57 & 311,13 & 622,25 & 1544,51 & 2469,01 & 4938,02 & 9876,04 & 19752,08 \\ \hline
+		05 & E         & 20,06 & 41,20 & 82,41  & 164,81 & 329,63 & 659,25 & 1318,51 & 2637,02 & 5274,04 & 10548,08 \\ \hline
+		06 & F         & 21,83 & 43,65 & 87,31  & 174,61 & 349,23 & 689,45 & 1396,92 & 2793,83 & 5587,66 & 11175,32 \\ \hline
+		07 & F$\sharp$ & 23,12 & 46,25 & 92,50  & 184,99 & 369,99 & 739,99 & 1479,98 & 2959,95 & 5991,90 & 11983,80 \\ \hline
+		08 & G         & 24,49 & 48,99 & 97,99  & 195,99 & 391,99 & 783,99 & 1567,89 & 3135,96 & 6271,92 & 12543,84 \\ \hline
+		09 & G$\sharp$ & 25,95 & 51,91 & 103,02 & 207,65 & 415,30 & 830,60 & 1661,22 & 3322,44 & 6644,88 & 13289,76 \\ \hline
+		10 & A         & 27,50 & 55,00 & 110,00 & 220,00 & 440,00 & 880,00 & 1760,00 & 3520,00 & 7040,00 & 14080,00 \\ \hline
+		11 & A$\sharp$ & 29,13 & 58,27 & 116,54 & 233,10 & 466,16 & 932,33 & 1864,65 & 3729,31 & 7458,62 & 14917,24 \\ \hline
+		12 & B         & 30,87 & 61,74 & 123,48 & 246,94 & 493,88 & 986,76 & 1975,53 & 3951,10 & 7902,20 & 15804,40 \\ \hline
+	\end{tabular}
+\end{table}
+
+% OBS: como colocar a tabela pro lado ou virada na pagina
+
+\subsection{Frequências, notas e acordes no violão}
+O braço do violão popular é dividido em trastes, formando espaços chamados de casas. Dentro dessas casas as notas são separadas, uma das outras, por um semitom. As seis cordas ficam sobre o braço  e são organizadas da mais fina para a mais grossa, ou da frequência mais alta para a mais baixa, olhando o violão de baixo para cima.
+
+A afinação deste instrumento é dita “afinação em quartas”, pois depois de um intervalo de quarto casas a frequência passa a ser a mesma da corda imediatamente abaixo desta.
+
+Três ou mais notas tocadas juntas formam um acorde. Os acordes são formados por intervalos harmônicos dando um sentido na harmonia. Os acordes menores e maiores são chamados de tríade, pois precisam apenas de três notas para a escala.
+
+Acordes Maiores: Essa escala é construída respeitando a distribuição de Tons e Semitons (T-T-ST-T-T-T-ST). Ex: A partir da nota C seguindo a distribuição, temos, C, D, E, F, G, A, B e C.
+
+Acordes Menores: É possível criar um acorde menor a partir da escala menor e respeitando a distribuição de Tons e Semitons (T-ST-T-T-ST-T-T). Ex: A partir de C seguindo a distribuição anterior, temos, C, D, Eb, F, G, Ab, Bb, C.
+
+O acorde no violão é representado pelas notas que formam a repetição e de algumas destas devido a quantidade de cordas que vibram ao mesmo tempo ser maior que a necessárias para a formação dos acordes. Logo os acordes menores e maiores do violão são formados pela tríade e pela repetição de alguma destas notas.
+ 
+
+%---------------------------------------------------%
+\section{Transformada Rápida de Fourier}
+\label{cap:conceitos:TTF}
+
+%Escrever mais sobre a trasformada de fourier e qual a importancia dela para este trabalho
+
+A Transformada rápida de Fourier (\gls{FFT}) é uma representação de uma função periódica de grande importância para processamento digital de sinais.
+
+A FFT é um algoritmo eficiente para se calcular a Transformada discreta de Fourier e a sua inversa. 
+
+O método de cálculo da transformada discreta de Fourier a partir da expressão
+\begin{equation} \label{eq1}
+\begin{split}
+Fn & = f_k e^{-i2\pi n\frac{k}{N}} = \sum_{k=0}^{N-1} f_k W^{k n} ,n = 0,...,N-1 
+\end{split}
+\end{equation}
+utiliza \(N^2\) produtos entre números complexos e \(N(N-1)\) somas, possuindo assim complexidade computacional \(O(N^2)\).
+O método FFT permite obter o mesmo resultado em tempo \(O(N log N)\) 
+
+%---------------------------------------------------%
+
+\section{Vetor Croma }
+\label{cap:conceitos:sec:vetor:croma}
+
+
+À partir do trabalho de \cite{fujishima1999realtime}, tornou-se comum a utilização de vetores croma, também chamados de \gls{PCP}, como ferramentas para a classificação de acordes. Um vetor croma é uma representação do espectro de um sinal.
+
+Consiste em um vetor de doze posições, cada uma relacionada a uma nota da escala cromática. Para construir o vetor, primeiramente se relacionam as frequências de todo o espectro às suas notas correspondentes na escala cromática em temperamento igual, independentemente da oitava.
+
+A energia presente em regiões que correspondem à mesma nota é, então, somada e o resultado constituirá um componente do vetor. Isto é realizado para as doze notas da escala. O vetor croma assim formado é, geralmente, normalizado após as operações.
+
+É importante notar que a diferenciação entre oitavas não é possível com os vetores croma. A informação de posicionamento absoluto no espectro é perdida durante a montagem do vetor. Isto permite que acordes tocados em qualquer região da escala sejam analisados da mesma maneira, mas tem o inconveniente de impedir a diferenciação de acordes com notas em posições invertidas, por exemplo.
+
+%---------------------------------------------------%
+\section{Redes Neurais}
+\label{cap:conceitos:sec:redes:neurais}
+Conforme  \cite{braga2000redes} as Redes Neurais Artificiais são técnicas computacionais que apresentam um modelo matemático inspirado na estrutura neural de organismos inteligentes e que adquirem conhecimento através da experiência. Uma grande rede neural artificial pode ter centenas ou milhares de unidades de processamento; já o cérebro de um mamífero pode ter muitos bilhões de neurônios.
+
+Uma rede neural artificial é composta por várias unidades de processamento, cujo funcionamento é bastante simples. Essas unidades, geralmente são conectadas por canais de comunicação que estão associados a determinado peso. As unidades fazem operações apenas sobre seus dados locais, que são entradas recebidas pelas suas conexões. O comportamento inteligente de uma Rede Neural Artificial vem das interações entre as unidades de processamento da rede.
+
+A maioria dos modelos de redes neurais possui alguma regra de treinamento, onde os pesos de suas conexões são ajustados de acordo com os padrões apresentados. Em outras palavras, elas aprendem através de exemplos.
+
+Uma rede neural é especificada, principalmente pela sua topologia, pelas características dos nós e pelas regras de treinamento.
+
+%---------------------------------------------------%
+% \section{Considerações Finais}
+% \label{cap:conceitos:sec:consideracoes:finais}
+

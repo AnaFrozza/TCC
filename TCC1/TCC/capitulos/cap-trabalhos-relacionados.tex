@@ -1,0 +1,54 @@
+% ATENÇÃO - veja com o seu orientador se você vai ter este capítulo e se este vai ter nome!
+\chapter{Trabalhos Relacionados}
+\label{cap:trabalhos:relacionados}
+
+
+\section{Reconhecimento de acordes: uma abordagem via Multilayer Perceptron}
+\label{cap:trabalhos:sec:relacionados:uso:citacoes}
+
+
+De acordo com o artigo de \cite{cletoa2010reconhecimento} é possível reconhecer acordes utilizando uma arquitetura de rede neural tradicional, o perceptron multicamadas (Multilayer Perceptron - MLP).  
+
+O reconhecimento de acordes pode ser modelado para ser usado em uma rede neural MLP aplicando como entrada as amplitudes obtidas pela transformada de Fourier e como saídas os valores que representam os acordes.  
+
+Para chegar nos resultados esperados do trabalho foram usados como fonte de entrada os istrumentos : Piano, Cravo, Orgão e Violão. 
+
+No treinamento foram usados 3 variações de acordes (formas diferentes de se tocar o mesmo acorde) para cada um dos 12 acordes da Tabela de acordes, totalizando 36 combinações, essas combinações foram gravadas pelos instrumetos escolhidos, totalizando 144 amostras.
+
+O espectro de frequências foi dividido em 61 faixas (61 teclas do piano), a frequência de maior amplitude de cada faixa, obtida por meio da transforma de Fourier, foi coletada e utilizada como variável de entrada no MLP configurado com 61 nós na sua camada oculta.
+
+Na validação foram gravadas 90 novas amostras de acordes com as seguintes caracteristicas: 
+
+    Teste 1: Cada um dos 12 acordes tocados com o mesmo timbre (Piano);
+    Teste 2: O acorde C com 11 timbres não usados no treinamento;
+    Teste 3: Três variações do acorde C com 4 timbres semelhantes aos treinados;
+    Teste 4: Os 12 acordes com cada um dos 4 timbres usados no treinamento;
+    Teste 5: Sete acordes tocados em um violão real.
+
+Observou-se que o treinamento da rede realizado com as 144 amostras de treinamento obtidas convergiu por volta da iteração 300 e que o erro quadrático médio, após 1000 iterações, atingiu um valor de 0,00061.
+
+Os resultados obtidos revelam que essa metodologia pode ser usada com sucesso, proporcionando taxas de reconhecimento médio de 84. Dessa forma, apesar da grande quantidade de limitações impostas, dentre elas o baixo número de acordes (12) e instrumentos (4) considerados e o baixo número de amostras utilizadas no treinamento (144), podemos considerar que os resultados foram promissores.
+
+
+
+%OBS: colocar mais um trabalho relacionado 
+
+% Apresente aqui os trabalhos similares ao seu trabalho ou que são importantes para o entendimento do seu trabalho...
+
+% (ATENÇÃO - veja com o seu orientador se você vai ter este capítulo e se este vai ter nome!)
+
+
+% Este é um exemplo do uso de citações no texto \cite{}.
+
+% Segundo \citeonline[p.~56]{Moore:2000:CMC:333067.333074} para citações textuais...
+
+% De acordo com o trabalho de \citeonline{Moore:2000:CMC:333067.333074} para citações textuais não tão específicas...
+
+
+%---------------------------------------------------%
+% \section{Considerações Finais}
+% \label{cap:trabalhos:relacionados:sec:consideracoes:finais}
+
+% Esta é uma sugestão de seção para dar um fechamento em cada uma dos capítulos.
+
+% (ATENÇÃO - veja com o seu orientador se é uma seção necessária (pois trate-se de estilo de escrita))

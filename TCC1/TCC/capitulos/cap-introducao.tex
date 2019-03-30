@@ -1,0 +1,51 @@
+\chapter{Introdução}
+\label{cap:introducao}
+
+% Coloque aqui o texto da introdução, contextualizando o seu trabalho...
+
+% Testando o uso das siglas na \gls{UTFPR} - pela primeira vez para \gls{ACM}. Segunda vez para \gls{ACM}...
+
+% A rede \gls{IP}...
+
+% Sugestões de seções
+% \section{Considerações preliminares}
+
+A transcrição musical automática é algo que a muito tempo atrai o interesse de muitos músicos. Transcrever uma música está associado ao ato de escutar e escrever o conteúdo que se ouviu. A motivação deste trabalho está na necessidade da criação de um software de reconhecimento de acordes musicais para auxiliar no aprendizado de novos músicos. 
+
+Atualmente existem diversos aplicativos que fazem a tradução para \gls{MIDI}. Entretanto, por se tratar de uma tarefa extremamente complexa, a qualidade obtida na transcrição ainda é bastante limitada. 
+Para realizar a transcrição de uma música, vários aspectos devem ser avaliados pelo software, como: o tempo, que é a velocidade em que a música é tocada; os instrumentos utilizados; a altura, que é a frequência das notas; o volume e a duração de cada nota. 
+
+Devido a esta e outras dificuldades, foi adotado a cifra como notação musical, pois considera apenas a altura das notas. A análise de tipos de instrumentos musicais diferentes e ritmos foram ignorados. Como fonte sonora foi escolhido o violão, por se tratar de um instrumento popular e que normalmente é usado em  estudos de outros artigos, dos quais poderá comparar resultados com outros autores.
+
+
+\section{Objetivos}
+\label{cap:introducao:sec:objetivos}
+
+O estudo tem como objetivo desenvolver um software capaz de identificar acordes utilizando transformada rápida de Fourier (FFT), vetor croma para detecção de acordes, além de redes Neurais para classificação. Este software poderá ser utilizado futuramente para um Sistema de Reconhecimento de acordes musicais mais complexos que seja capaz de distinguir outros instrumentos. 
+
+
+\section{Problema de Pesquisa}
+\label{cap:introducao:sec:problema:pesquisa}
+
+No decorrer deste trabalho três preocupações estavam presentes:
+Evitar que irregularidades na estimativa da frequência de referencia ocasionasse notas espúrias.
+Eliminar o atraso decorrente do fato das notas muitas vezes não possuírem, em seu estagio inicial, altura definida.
+Impedir que uma sequencia de notas repedidas seja interpretado como uma única nota.
+
+
+% \section{Contribuições}
+% \label{cap:introducao:sec:contribuicoes}
+
+% No que o seu trabalho ajuda? Há diferenças entre o seu trabalho e outros?
+
+\section{Organização do Texto}
+\label{cap:introducao:sec:organizacao:texto}
+
+
+O capítulo~\ref{cap:conceitos} apresenta alguns conceitos e ferramentas necessários para o desenvolvimento do trabalho. Uma introdução breve sobre os conceitos da música e suas notas, frequência e acordes, a transformada discreta de Fourier e a transformada rápida de Fourier, são revistas. Apresenta-se uma breve explicação sobre vetores croma. Ao fim, é descrito o funcionamento geral sobre redes neurais. Os trabalhos utilizados como referências são abordados no capítulo~\ref{cap:trabalhos:relacionados} .
+
+A metodologia é discutida no capítulo~\ref{cap:metodologia}, onde será mostrada a implementação do sistema detalhadamente. Nele a estrutura principal do projeto é apontada, e as decisões tomadas são explicitadas. E finalmente, no capítulo~\ref{cap:proposta} é apresentada a proposta do seguinte trabalho e o cronograma de atividades a ser seguido. 
+
+% Finalmente, no Capítulo~\ref{cap:conclusoes} obtem-se as considerações finais e as conclusões obtidas no desenvolvimento deste trabalho. 
+
+% No Capítulo~\ref{cap:introducao} blablabla, no capítulo seguinte tititi, etc... Nossa proposta é apresentada no Capítulo~\ref{cap:proposta}.... Finalmente, no Capítulo~\ref{cap:conclusoes} apresentamos as conclusões obtidas no desenvolvimento deste trabalho...
