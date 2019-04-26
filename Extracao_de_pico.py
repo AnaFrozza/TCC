@@ -17,11 +17,11 @@ def exibe_cqt(x, sr):
 
 # Espctrograma
 def expectrograma(x, log_cqt, sr, bins_per_octave):
-    print("Tom de cada nota")
     librosa.display.specshow(log_cqt, sr=sr, x_axis='time', y_axis='cqt_note', bins_per_octave=bins_per_octave)
     print("\n")
+    plt.title('Tom de cada nota')
     plt.show()
-    plt.colorbar(format='%2.0f dB')
+    # plt.colorbar(format='%2.0f dB')
     
 
 # Envelope de forca
@@ -58,10 +58,9 @@ def tempo_onsets(sr, onset_boundaries):
 
 # Forma da onda
 def forma_onda(x, sr, onset_times):
-    print("Amplitude da forma da onda")
     librosa.display.waveplot(x, sr=sr)
-    print(plt.vlines(onset_times, -1, 1, color='r'))
-    
+    plt.vlines(onset_times, -1, 1, color='r')
+    plt.title('Amplitude da forma da onda')
 
 def estimate_pitch(segment, sr, fmin=50.0, fmax=2000.0):    
     # Computa a autocorrelação do segmento de entrada.
@@ -95,8 +94,8 @@ def concatena_sintetizado(x, sr, onset_boundaries):
     ])
     # ipd.Audio(y, rate=sr)
     cqt = librosa.cqt(y, sr=sr)
-    print("Notas sintetizadas")
     librosa.display.specshow(abs(cqt), sr=sr, x_axis='time', y_axis='cqt_note')
+    plt.title('Notas sintetizadas')
     plt.show()
 
 

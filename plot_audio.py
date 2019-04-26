@@ -14,9 +14,9 @@ def plot_audio(y, sr, filename):
     mel_stft = librosa.feature.melspectrogram(S=stft, sr=sr, n_mels=128, fmax=f_max)
     chroma_cqt = librosa.feature.chroma_cqt(y=y, sr=sr)
     # Chromagrama por passo da classe
-    # librosa.display.specshow(chroma_cqt, y_axis='chroma', x_axis='time')
+    librosa.display.specshow(chroma_cqt, y_axis='chroma', x_axis='time')
     # Espectrograma por Hz
-    librosa.display.specshow(chroma_cqt, y_axis='cqt_hz', x_axis='time')
+    # librosa.display.specshow(chroma_cqt, y_axis='cqt_hz', x_axis='time')
     # Espectrograma por Nota
     # librosa.display.specshow(chroma_cqt, y_axis='cqt_note')
 
